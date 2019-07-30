@@ -1,4 +1,22 @@
+// TO RUN $tsc, $node dist/javascript.js
+//____________________________Destructuring____________________________________________________
+
+// const toppings = ["pepperoni", "bacon", "chilli"];
+
+// const [first, second, third] = toppings;
+
+// function logToppings([first, second, third]: any) {
+//   console.log(first, second, third);
+// }
+
+// logToppings(toppings);
+
 //____________________________Spread operator____________________________________________________
+
+const toppings = ["a", "b"];
+const newtoppings = ["b", "c"];
+const alltoppings = [...toppings, ...newtoppings];
+console.log(alltoppings);
 
 //____________________________Rest params____________________________________________________
 
