@@ -1,18 +1,16 @@
-module.exports ={
+module.exports = {
     entry: './src/app.ts',
     output: {
-        filename: 'appp.js',
-        path: __dirname + './dist'
+      filename: 'app.js',
+      path: __dirname + './dist',
     },
     resolve: {
-        extensions: ['.ts', '.js']
+      extensions: ['.ts', '.js'],
     },
-    module:{
-        rules:[
-            {test: /\.ts$/, use:'awesome-typescript-loader'}
-        ]
+    module: {
+      rules: [{ test: /\.ts$/, use: 'awesome-typescript-loader' }],
     },
-    devServer:{ 
-        port: 3000,
-    }
-}
+    devServer: {
+      port: 3000,
+    },
+  };
